@@ -22,7 +22,7 @@ function Brand({ light = false }: { light?: boolean }) {
 }
 
 function FoodPhoto({ position, className = '' }: { position: string; className?: string }) {
-  return <div className={`food-photo ${className}`} style={{ backgroundPosition: position }} role="img" aria-label="Hình món ăn minh họa" />
+  return <div className={`food-photo ${className}`} style={{ backgroundPosition: position, backgroundImage: `url(${import.meta.env.BASE_URL}images/foodgo-dishes.webp)` }} role="img" aria-label="Hình món ăn minh họa" />
 }
 
 function SectionHeading({ eyebrow, title, description, centered = false }: { eyebrow: string; title: string; description: string; centered?: boolean }) {
@@ -100,7 +100,7 @@ function HeroSection({ inputRef, onSearch }: { inputRef: React.RefObject<HTMLInp
         <div className="hero-note"><span className="note-icon"><Truck size={18} /></span><span>Hàng trăm lựa chọn ngon đang chờ bạn khám phá</span></div>
       </div>
       <div className="hero-visual">
-        <div className="hero-image-wrap"><img src="/images/foodgo-hero.webp" alt="Phở bò, cơm tấm và gỏi cuốn Việt Nam" width="1536" height="1024" fetchPriority="high" /></div>
+        <div className="hero-image-wrap"><img src={`${import.meta.env.BASE_URL}images/foodgo-hero.webp`} alt="Phở bò, cơm tấm và gỏi cuốn Việt Nam" width="1536" height="1024" fetchPriority="high" /></div>
         <div className="floating-card floating-top"><span className="floating-icon"><Heart size={20} fill="currentColor" /></span><span><strong>Ngon đúng ý</strong><small>Chọn món bạn thích</small></span></div>
         <div className="floating-card floating-bottom"><span className="floating-icon delivery"><Bike size={21} /></span><span><strong>Dễ dàng khám phá</strong><small>Ngay quanh khu vực bạn</small></span></div>
         <div className="hero-decor hero-decor-one" /><div className="hero-decor hero-decor-two" />

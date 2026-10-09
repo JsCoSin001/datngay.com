@@ -13,6 +13,10 @@ npm run dev
 
 Mở địa chỉ do Vite hiển thị. Kiểm tra bản dựng bằng `npm run build`, sau đó dùng `npm run preview` nếu cần xem bản production.
 
+## Xem trên GitHub Pages
+
+Workflow `.github/workflows/pages.yml` tự build và triển khai khi có commit mới trên `main`. Sau khi workflow hoàn tất, mở [bản demo FoodGo](https://jscosin001.github.io/datngay.com/). Chạy `npm run build:pages` để kiểm tra bản build với đường dẫn `/datngay.com/` trước khi đẩy lên GitHub.
+
 ## Dữ liệu demo
 
 Danh mục, nhà hàng, thực đơn, giá, đánh giá, ưu đãi và thời gian giao hàng là dữ liệu minh họa trong `src/data.ts`. Nhập địa chỉ để thử tìm kiếm, lọc nhà hàng, xem thực đơn, thêm món vào giỏ và xác nhận đơn mô phỏng. Không có backend, kiểm tra khu vực, thanh toán hay đơn hàng thật. Các biểu mẫu đăng nhập và đối tác cũng chỉ mô phỏng trong phiên trình duyệt.

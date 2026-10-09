@@ -103,7 +103,7 @@ section[id], footer[id] { scroll-margin-top: 82px; }
 .categories-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 17px; }
 .category-card { overflow: hidden; min-width: 0; padding: 0 0 17px; text-align: left; background: white; border: 1px solid #f0f0f0; border-radius: 18px; box-shadow: 0 6px 22px rgba(31,41,55,.045); transition: transform .2s, box-shadow .2s, border-color .2s; }
 .category-card:hover { transform: translateY(-5px); border-color: #ffd0c0; box-shadow: var(--shadow); }
-.food-photo { background-image: url('/images/foodgo-dishes.webp'); background-repeat: no-repeat; background-size: 300% 200%; }
+.food-photo { background-repeat: no-repeat; background-size: 300% 200%; }
 .category-image { width: 100%; aspect-ratio: 1 / 1; margin-bottom: 13px; }
 .category-title { display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 0 13px; color: var(--ink); font-weight: 700; font-size: 14px; white-space: nowrap; }
 .category-arrow { display: grid; place-items: center; flex: none; width: 25px; height: 25px; color: var(--coral); background: var(--coral-light); border-radius: 50%; }
